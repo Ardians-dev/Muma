@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MumaCode - Jasa Pembuatan Website Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="w-10 h-10">
+                        <img src="Gambar/WhatsApp_Image_2025-05-17_at_16.54.16_cd316cdc-removebg-preview.png" alt="">
+                    </div>
+                    <a href="#" class="text-2xl font-bold text-blue-600">Muma<span class="text-blue-800">Code</span></a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-blue-600 font-medium hover:text-blue-800 transition">Home</a>
+                    <a href="#layanan" class="text-gray-700 font-medium hover:text-blue-600 transition">Layanan</a>
+                    <a href="#portofolio" class="text-gray-700 font-medium hover:text-blue-600 transition">Portofolio</a>
+                    <a href="#testimoni" class="text-gray-700 font-medium hover:text-blue-600 transition">Testimoni</a>
+                    <a href="#kontak" class="text-gray-700 font-medium hover:text-blue-600 transition">Kontak</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#home" class="block py-2 text-blue-600 font-medium">Home</a>
+                <a href="#layanan" class="block py-2 text-gray-700 font-medium hover:text-blue-600">Layanan</a>
+                <a href="#portofolio" class="block py-2 text-gray-700 font-medium hover:text-blue-600">Portofolio</a>
+                <a href="#testimoni" class="block py-2 text-gray-700 font-medium hover:text-blue-600">Testimoni</a>
+                <a href="#kontak" class="block py-2 text-gray-700 font-medium hover:text-blue-600">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-gradient-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Solusi Digital Sesuai Keahlian & Kebutuhan Anda</h1>
+                    <p class="text-xl mb-8 opacity-90">Kami membantu pelajar, mahasiswa, dan pemilik usaha kecil dengan layanan pengembangan web sesuai kebutuhan.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#kontak" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-lg text-center">
+                            Hubungi Kami
+                        </a>
+                        <a href="#layanan" class="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-blue-600 transition duration-300 transform hover:scale-105 shadow-lg text-center">
+                            Lihat Layanan
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0 slide-up">
+                    <img src="Gambar/WhatsApp_Image_2025-05-17_at_17.27.18_5b779b3c-removebg-preview.png" 
+                         alt="Website Development" 
+                         class="rounded-xl transform hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Layanan Kami</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan berbagai layanan digital berbasis web, yang dirancang khusus untuk UMKM, personal branding, dan proyek edukasi.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Layanan 1 -->
+                <div id="statis" class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 slide-up hover-scale">
+                    <div class="bg-blue-100 text-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Website Statis</h3>
+                    <p class="text-gray-600 mb-4">Pembuatan website sederhana dan cepat dengan tampilan menarik, cocok untuk portofolio, profil usaha, atau landing page.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Desain modern & responsif
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Dibuat dengan HTML, CSS, JavaScript
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Menggunakan Bootstrap atau Tailwind
+                        </li>
+                    </ul>
+                    <a href="#kontak" class="text-blue-600 font-medium hover:text-blue-800 transition flex items-center">
+                        Pesan Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Layanan 2 -->
+                <div id="dinamis" class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 slide-up hover-scale" style="animation-delay: 0.2s;">
+                    <div class="bg-blue-100 text-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Website Dinamis (Basic)</h3>
+                    <p class="text-gray-600 mb-4">Website interaktif dengan backend Python (Django), cocok untuk website berita, blog, atau formulir interaktif.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Dibuat dengan Django
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Sistem input & output data sederhana
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Tampilan responsif dan rapi
+                        </li>
+                    </ul>
+                    <a href="#kontak" class="text-blue-600 font-medium hover:text-blue-800 transition flex items-center">
+                        Pesan Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio Section -->
+    <section id="portofolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Portofolio</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Berikut beberapa proyek yang pernah saya kerjakan:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 scale-in hover-scale">
+                    <img src="Gambar/Screenshot 2025-05-17 141415.png" 
+                         alt="Website Restoran" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Website Portofolio</h3>
+                        <p class="text-gray-600 mb-4">Website statis untuk menampilkan profil, Hobi, Gallery dan kontak.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full">HTML</span>
+                            <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full">CSS</span>
+                            <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+                        </div>
+                        <a href="https://portofolio-febri-setiawan.vercel.app/" class="text-blue-600 font-medium hover:text-blue-800 transition flex items-center">
+                            Lihat Detail <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg">
+                    Lihat Semua Portofolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Testimoni</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Klien yang puas dengan layanan kami adalah prioritas utama kami.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 slide-up">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="Gambar\WhatsApp Image 2025-05-15 at 17.08.27_6c9022c6.jpg" alt="Sarah Johnson" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Jebri Surdadi</h4>
+                            <p class="text-gray-600">Siswa SMK</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">“Website portofolio yang dibuat sangat keren dan cocok untuk saya yang suka bola.”</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Siap Bekerja Sama?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">Hubungi saya untuk memulai proyek Anda hari ini. Cocok untuk tugas, portofolio, atau usaha kecil.</p>
+            <a href="#kontak" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-lg">
+                Konsultasi Gratis
+            </a>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12 fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+                    <div class="w-20 h-1 bg-blue-600 mb-6"></div>
+                    <p class="text-gray-600 mb-8">Silakan isi formulir atau hubungi saya langsung.</p>
+                    
+                    <div class="space-y-6"> 
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">ardiansyah25526@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Telepon</h4>
+                                <p class="text-gray-600">+62 857 7478 6353</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 slide-up">
+                    <form class="bg-white p-8 rounded-xl shadow-lg" action="https://formspree.io/f/mdkgbppg" method="POST">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Masukkan nama Anda">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Masukkan email Anda">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Masukkan nomor telepon">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Layanan yang Diminati</label>
+                            <select name="layanan" id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="" name="layanan">Pilih layanan</option>
+                                <option value="website">Website Statis</option>
+                                <option value="ecommerce">Website Dinamis</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                            <textarea name="pesan" id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tulis pesan Anda"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10">
+                            <img src="Gambar/WhatsApp_Image_2025-05-17_at_16.54.16_cd316cdc-removebg-preview.png" alt="">
+                        </div>
+                        <a href="#" class="text-2xl font-bold">Muma<span class="text-blue-400">Code</span></a>
+                    </div>
+                    <p class="text-gray-400">Layanan pengembangan website & data sederhana dengan teknologi modern.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#layanan" class="text-gray-400 hover:text-white transition">Layanan</a></li>
+                        <li><a href="#portofolio" class="text-gray-400 hover:text-white transition">Portofolio</a></li>
+                        <li><a href="#testimoni" class="text-gray-400 hover:text-white transition">Testimoni</a></li>
+                        <li><a href="#kontak" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Layanan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#statis" class="text-gray-400 hover:text-white transition">Website Statis</a></li>
+                        <li><a href="#dinamis" class="text-gray-400 hover:text-white transition">Website Dinamis</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Kontak</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-gray-400 mr-2 mt-1"></i>
+                            <span class="text-gray-400">Watukumpul, Pemalang, Jateng</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">ardiansyah25526@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">+62 857 7478 6353</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 MumaCode. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
